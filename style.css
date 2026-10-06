@@ -70,25 +70,27 @@ body {
     text-align: center;
 }
 
+/* 郵票外框：專為 200x200 正方形圖片設計 */
 .stamp {
-    position: absolute;
-    top: 20px; 
+    position: absolute !important;
+    top: 20px;
     right: 20px;
-    width: 55px; 
-    height: 65px;
-    background: #fcfcfc;
-    border: 2px dashed #ccc; /* 留著這個虛線會很像郵票邊框 */
-    padding: 3px;          /* 留一點留白像真郵票 */
-    box-shadow: 1px 1px 4px rgba(0,0,0,0.15);
-    overflow: hidden;
+    width: 60px !important;       /* 外框寬度 */
+    height: 60px !important;      /* 外框高度 (正方形) */
+    background: #ffffff;
+    border: 1.5px dashed #bbb;   /* 經典郵票虛線齒邊效果 */
+    padding: 3px;                 /* 留白框邊緣 */
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    overflow: hidden !important;
+    z-index: 10;
 }
 
-/* 新增下面這段，讓圖片自動適應郵票框大小 */
+/* 郵票圖片：完整容納 200x200 圖片且不變形 */
 .stamp-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important; /* 確保 200x200 海豚圖案完整顯現不被切掉 */
+    display: block !important;
 }
 
 .postmark {
