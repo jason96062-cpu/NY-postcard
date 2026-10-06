@@ -71,11 +71,11 @@ body {
 }
 
 .stamp {
-    position: absolute !important;
+    position: absolute ;
     top: 20px;
     right: 20px;
-    width: 48px !important;       /* 外框寬度 */
-    height: 48px !important;      /* 外框高度 (正方形) */
+    width: 48px ;       /* 外框寬度 */
+    height: 48px ;      /* 外框高度 (正方形) */
     background: #ffffff;
     border: 1.5px dashed #bbb;   /* 經典郵票虛線齒邊效果 */
     padding: 3px;                 /* 留白框邊緣 */
