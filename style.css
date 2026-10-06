@@ -72,26 +72,34 @@ body {
 
 .stamp {
     position: absolute;
-    top: 20px; right: 20px;
-    width: 50px; height: 60px;
-    background: #fcfcfc;
-    border: 2px dashed #ccc;
-    font-size: 0.7rem;
-    display: flex; align-items: center; justify-content: center;
-    font-family: var(--font-typewriter); color: var(--accent-red);
+    top: 10;
+    right: 10;
+    width: 80px;
+    height: 80px;
+    z-index: 1; /* 圖層位於郵戳下方 */
+    filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.12));
+}
+
+.stamp-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .postmark {
     position: absolute;
-    top: 15px; right: 55px;
-    width: 80px; height: 80px;
+    top: 15px; right: 65px;
+    width: 85px; height: 85px;
     border-radius: 50%;
-    border: 2px solid rgba(0,0,0,0.4);
+    border: 2px solid #c83b3b;
+    color: #c83b3b;
     display: flex; align-items: center; justify-content: center;
-    font-size: 0.6rem; font-family: var(--font-text);
+    font-size: 0.65rem; font-family: var(--font-text);
     transform: rotate(-15deg);
     color: rgba(0,0,0,0.5);
     text-align: center;
+    z-index: 2;
 }
 
 .envelope h1 { font-size: 1.4rem; margin-top: 60px; color: var(--text-main); }
