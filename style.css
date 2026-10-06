@@ -1,224 +1,265 @@
+/* CSS Reset & Variables */
 :root {
-    --color-bg: #f9f7f1;          /* 溫暖紙張背景 */
-    --color-card-bg: #ffffff;     /* 明信片底色 */
-    --color-text: #2c3e50;        /* 手寫墨水藍灰 */
-    --color-accent: #c83b3b;      /* 復古印泥紅 */
-    --color-border: #e0e0e0;      /* 分割線條色 */
+    --bg-paper: #FDFBF7;
+    --paper-dark: #f0ebe1;
+    --text-main: #3b3631;
+    --accent-blue: #8CB8C9;
+    --accent-yellow: #F4E285;
+    --accent-red: #D37B75;
+    --accent-brown: #A68A6D;
     
-    --font-heading: 'Courier Prime', monospace;
-    --font-handwriting: 'Caveat', cursive, sans-serif;
+    --font-text: 'Nunito', sans-serif;
+    --font-handwriting: 'Caveat', cursive;
+    --font-typewriter: 'Special Elite', monospace;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    font-family: var(--font-heading);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
+    background-color: var(--bg-paper);
+    background-image: url('data:image/svg+xml;utf8,<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.04"/></svg>');
+    color: var(--text-main);
+    font-family: var(--font-text);
+    overflow-x: hidden;
+    line-height: 1.6;
 }
 
-/* 畫面區塊共用 */
-.section {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
+/* Typography Classes */
+.handwriting { font-family: var(--font-handwriting); font-size: 1.5rem; }
+.typewriter { font-family: var(--font-typewriter); font-size: 1rem; }
 
-/* 1. 信封樣式 */
-.envelope {
-    position: relative;
-    width: 90%;
-    max-width: 580px;
-    height: 360px;
-    background: #fdfbf7;
-    border: 1px solid #dcd6cd;
-    border-radius: 4px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+/* Utilities */
+.hidden { display: none !important; }
+.shadow { box-shadow: 2px 4px 15px rgba(0,0,0,0.08); }
 
-.envelope-content {
-    text-align: center;
-}
-
-.typewriter {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-/* 2. 明信片樣式 */
-.postcard {
-    position: relative;
-    width: 90%;
-    max-width: 720px;
-    min-height: 440px;
-    background: var(--color-card-bg);
-    border: 1px solid #e2ddd5;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-    display: flex;
-    padding: 35px;
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.postcard-left {
-    position: relative;
-    flex: 1.2;
-    padding-right: 30px;
-    border-right: 1px solid var(--color-border);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.postcard-right {
-    position: relative;
-    flex: 1;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-/* 手寫字體設定 */
-.handwriting {
-    font-family: var(--font-handwriting) !important;
-    font-size: 1.5rem !important;
-    line-height: 1.4 !important;
-    color: var(--color-text);
-}
-
-.postcard-body {
-    margin: 15px 0;
-}
-
-/* 左下角小熊插圖 */
-.corner-bear {
+/* Tape effect */
+.tape {
     position: absolute;
-    bottom: -15px;
-    left: -15px;
-    width: 120px;
-    height: auto;
-    object-fit: contain;
-    mix-blend-mode: multiply; /* 自然融入紙張背景 */
-    pointer-events: none;
-    opacity: 0.9;
+    width: 80px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+    border-radius: 2px;
+}
+.tape-top-center { top: -10px; left: 50%; transform: translateX(-50%) rotate(-2deg); }
+.tape-top-left { top: -10px; left: -10px; transform: rotate(-45deg); }
+.tape-bottom-right { bottom: -10px; right: -10px; transform: rotate(-45deg); }
+
+/* Envelope Hero */
+.envelope-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: opacity 1s ease, transform 1s ease;
+    z-index: 100;
 }
 
-/* 3. 郵票區塊 (自動配合 PNG 圖檔放大) */
-.stamp-area {
+.envelope {
+    background-color: var(--paper-dark);
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 20px;
+    border-radius: 5px;
     position: relative;
-    width: 100px;
-    height: 100px;
+    box-shadow: 2px 10px 20px rgba(0,0,0,0.1);
+    border: 1px solid #e3dec9;
+    text-align: center;
 }
 
 .stamp {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 80px;
-    height: 80px;
-    z-index: 1; /* 圖層位於郵戳下方 */
-    filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.12));
+    top: 20px; right: 20px;
+    width: 50px; height: 60px;
+    background: #fcfcfc;
+    border: 2px dashed #ccc;
+    font-size: 0.7rem;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-typewriter); color: var(--accent-red);
 }
 
-.stamp-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-/* 4. 印章紅郵戳 (強制覆蓋上層) */
 .postmark {
     position: absolute;
-    top: 10px;
-    right: 45px;
-    width: 85px;
-    height: 85px;
+    top: 15px; right: 55px;
+    width: 80px; height: 80px;
     border-radius: 50%;
-    border: 2px solid var(--color-accent) !important;
-    color: var(--color-accent) !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.6rem;
-    font-family: var(--font-heading);
-    font-weight: bold;
+    border: 2px solid rgba(0,0,0,0.4);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.6rem; font-family: var(--font-text);
     transform: rotate(-15deg);
-    opacity: 0.85;
-    z-index: 2 !important; /* 強制覆蓋在郵票上 */
-    pointer-events: none;
+    color: rgba(0,0,0,0.5);
     text-align: center;
-    line-height: 1.2;
 }
 
-.postmark, .postmark * {
-    color: var(--color-accent) !important;
-    border-color: var(--color-accent) !important;
-}
+.envelope h1 { font-size: 1.4rem; margin-top: 60px; color: var(--text-main); }
+.to-line { font-size: 2rem; margin: 20px 0; color: var(--accent-blue); }
 
-/* 右側收件地址橫線 */
-.address-lines {
-    width: 100%;
-    margin-top: 60px;
-}
-
-.address-lines .line {
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-border);
-    margin-bottom: 30px;
-}
-
-/* 下滑提示動態 */
 .scroll-indicator {
-    margin-top: 25px;
-    font-size: 0.85rem;
+    position: absolute;
+    bottom: 40px;
+    font-family: var(--font-typewriter);
+    font-size: 0.9rem;
     color: #888;
 }
 
-.fade-bounce {
-    animation: bounce 2s infinite;
+.fade-bounce { animation: bounce 2s infinite; }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(10px); } }
+
+/* Main Content Wrapper */
+#main-content { padding-bottom: 50px; }
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-8px); }
-    60% { transform: translateY(-4px); }
+/* Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* 響應式調整 */
-@media (max-width: 600px) {
-    .postcard {
-        flex-direction: column;
-    }
-    .postcard-left {
-        border-right: none;
-        border-bottom: 1px solid var(--color-border);
-        padding-right: 0;
-        padding-bottom: 20px;
-    }
-    .postcard-right {
-        padding-left: 0;
-        padding-top: 20px;
-    }
+/* Notes & Journal */
+.paper-note, .journal-page {
+    background: #fff;
+    padding: 30px;
+    position: relative;
+    border-radius: 2px;
+}
+.paper-note p { font-size: 1.6rem; color: var(--text-main); line-height: 1.4; }
+
+/* Chapter Styling */
+.chapter {
+    margin-bottom: 80px;
+    position: relative;
+}
+.chapter-header {
+    margin-bottom: 20px;
+}
+.chapter-number {
+    font-family: var(--font-typewriter);
+    color: var(--accent-brown);
+    font-size: 1.2rem;
+}
+.chapter-title {
+    font-size: 1.8rem;
+    color: var(--text-main);
+    margin-bottom: 5px;
+}
+.chapter-location {
+    font-family: var(--font-handwriting);
+    color: var(--accent-blue);
+    font-size: 1.4rem;
+}
+
+/* Polaroid Image */
+.polaroid {
+    background: #fff;
+    padding: 10px 10px 40px 10px;
+    box-shadow: 2px 4px 15px rgba(0,0,0,0.1);
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+    margin-bottom: 25px;
+}
+.polaroid:nth-child(even) { transform: rotate(2deg); }
+.polaroid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #eee;
+}
+.polaroid-caption {
+    font-family: var(--font-handwriting);
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+    font-size: 1.3rem;
+}
+
+.chapter-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Final Postcard */
+.postcard-section {
+    margin-top: 60px;
+}
+.postcard-card {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.postcard-left, .postcard-right { padding: 20px; }
+.postcard-left { border-bottom: 2px dashed #eee; background: #fafafa; }
+.postcard-image-placeholder img {
+    width: 100%; height: auto; object-fit: cover; border-radius: 2px;
+}
+.postcard-right { position: relative; }
+.greeting-lines { margin-top: 40px; }
+.friend-name-big {
+    font-size: 1.2rem; margin: 15px 0; border-bottom: 1px solid #ccc; padding-bottom: 5px;
+}
+.message-body { font-size: 1.5rem; line-height: 1.5; color: #555; margin-bottom: 30px; }
+.signature { text-align: right; color: var(--accent-blue); font-size: 1.8rem; }
+.final-stamp { top: 20px; right: 20px; }
+.final-postmark { top: 10px; right: 40px; }
+
+/* Stats List */
+#stats-list { list-style: none; margin-top: 20px; }
+#stats-list li { margin-bottom: 10px; border-bottom: 1px dotted #ccc; padding-bottom: 5px; }
+
+/* Easter Egg */
+.easter-egg {
+    position: fixed;
+    bottom: 20px; right: 20px;
+    color: var(--accent-yellow);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+    text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 2000;
+}
+.modal-content {
+    max-width: 80%; text-align: center;
+}
+#close-modal {
+    margin-top: 20px; padding: 5px 15px;
+    background: transparent; border: 1px solid #ccc;
+    cursor: pointer; font-family: var(--font-typewriter);
+}
+
+.footer { text-align: center; padding: 40px; color: #aaa; font-size: 0.9rem; }
+
+/* Desktop adjustments */
+@media (min-width: 768px) {
+    .postcard-card { flex-direction: row; }
+    .postcard-left { width: 50%; border-bottom: none; border-right: 2px dashed #eee; }
+    .postcard-right { width: 50%; }
+    .chapter { display: flex; align-items: center; gap: 40px; }
+    .chapter:nth-child(even) { flex-direction: row-reverse; }
+    .chapter-content { flex: 1; }
+    .polaroid { flex: 1; max-width: 400px; margin: 0; }
 }
