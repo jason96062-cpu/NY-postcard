@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A Postcard from New York</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 啟動信封 / 首頁 Hero -->
+    <div id="envelope-section" class="section envelope-screen">
+        <div class="envelope">
+            <div class="stamp">USA<br>Forever</div>
+            <div class="postmark">NEW YORK, NY<br>SUMMER 2026</div>
+            <div class="envelope-content">
+                <h1 class="typewriter">A POSTCARD FROM NEW YORK</h1>
+                <p class="handwriting to-line">To: <span id="env-friend-name">Friend</span></p>
+                <div class="plane-route">
+                    <span class="plane">✈️</span>
+                    <svg width="100%" height="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 0 10 Q 50 -10 100 10 T 200 10" stroke="#a0a0a0" stroke-dasharray="5,5" fill="transparent" stroke-width="2"/>
+                    </svg>
+                </div>
+                <p class="env-date handwriting">New York · Summer 2026</p>
+            </div>
+        </div>
+        <div class="scroll-indicator fade-bounce">
+            Scroll to open the postcard ↓
+        </div>
+    </div>
+
+    <!-- 主要內容區 (信封打開後顯示) -->
+    <div id="main-content" class="hidden">
+        
+        <!-- 朋友專屬留言 (Optional) -->
+        <div id="personal-note-section" class="section note-section hidden animate-on-scroll">
+            <div class="paper-note shadow">
+                <p class="handwriting" id="personal-note-text"></p>
+                <div class="tape tape-top-center"></div>
+            </div>
+        </div>
+
+        <!-- 章節容器 -->
+        <div id="chapters-container"></div>
+
+        <!-- 最終明信片 -->
+        <div id="final-postcard" class="section postcard-section animate-on-scroll">
+            <div class="postcard-card shadow">
+                <div class="postcard-left">
+                    <div class="postcard-image-placeholder">
+                        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=600&q=80" alt="New York Sunset" class="postcard-img">
+                        <div class="photo-caption handwriting">Until next time...</div>
+                    </div>
+                </div>
+                <div class="postcard-right">
+                    <div class="stamp final-stamp">NYC<br>2026</div>
+                    <div class="postmark final-postmark">NYC POST</div>
+                    <div class="greeting-lines">
+                        <h2 class="handwriting">Greetings from New York.</h2>
+                        <p class="friend-name-big typewriter">TO: <span id="final-friend-name"></span></p>
+                        <p class="handwriting message-body" id="ending-message"></p>
+                    </div>
+                    <div class="signature handwriting">
+                        <p>With love,</p>
+                        <p id="signature-text">Jason</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 旅行統計 (手帳區) -->
+        <div id="stats-section" class="section stats-section animate-on-scroll">
+            <div class="journal-page shadow">
+                <div class="tape tape-top-left"></div>
+                <div class="tape tape-bottom-right"></div>
+                <h3 class="handwriting">A few things from New York...</h3>
+                <ul id="stats-list" class="typewriter"></ul>
+            </div>
+        </div>
+
+        <!-- 彩蛋 (Easter Egg) -->
+        <div id="easter-egg" class="easter-egg hidden">
+            ✦
+        </div>
+        <div id="easter-egg-modal" class="modal hidden">
+            <div class="modal-content paper-note">
+                <p class="handwriting" id="easter-egg-text"></p>
+                <button id="close-modal" class="typewriter">Close</button>
+            </div>
+        </div>
+
+        <div class="footer typewriter">
+            See you somewhere in the world.
+        </div>
+    </div>
+
+    <script src="friends.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
