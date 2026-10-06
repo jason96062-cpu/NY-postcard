@@ -78,6 +78,7 @@ body {
     height: 80px;
     z-index: 1; /* 圖層位於郵戳下方 */
     filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.12));
+    background: transparent;
 }
 
 .stamp-img {
