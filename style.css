@@ -72,27 +72,27 @@ body {
 
 /* 1. 外框：限制郵票框的大小與位置 */
 .stamp {
-    position: absolute !important;
+    position: absolute;
     top: 20px;
     right: 20px;
-    width: 48px !important;       /* 強制郵票框寬度 */
-    height: 48px !important;      /* 強制郵票框高度 */
+    width: 60px !important;       /* 強制郵票框寬度 */
+    height: 60px !important;      /* 強制郵票框高度 */
     background: #fcfcfc;
     border: 1.5px dashed #ccc;
     padding: 2px;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.12);
-    overflow: hidden !important;  /* 超出框框的部分自動切除 */
+    overflow: hidden;  /* 超出框框的部分自動切除 */
     z-index: 10;
 }
 
 /* 2. 裡面的圖片：強制讓大圖縮小適應外框 */
 .stamp-img {
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    object-fit: cover !important; /* 自動裁切填滿，不擠壓變形 */
-    display: block !important;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* 自動裁切填滿，不擠壓變形 */
+    display: block;
 }
 
 .postmark {
