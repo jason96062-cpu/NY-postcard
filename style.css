@@ -73,7 +73,7 @@ body {
 .stamp {
     position: absolute;
     top: 20px;
-    right: 80px;
+    right: 20px;
     width: 80px;
     height: 80px;
     filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.12));
