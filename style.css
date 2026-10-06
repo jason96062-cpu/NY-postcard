@@ -82,7 +82,6 @@ body {
     outline-offset: -5px;
     padding: 6px;
     box-shadow: 2px 2px 6px rgba(0,0,0,0.12);
-    z-index: 1;
 }
 
 /* 2. 裡面的圖片：強制讓大圖縮小適應外框 */
@@ -110,7 +109,6 @@ body {
     font-family: var(--font-heading, monospace);
     transform: rotate(-15deg);
     opacity: 0.85;
-    z-index: 2 !important;        /* 👈 層級設為 2，確保壓在郵票上方 */
     pointer-events: none;         /* 避免擋住點擊 */
 }
 
