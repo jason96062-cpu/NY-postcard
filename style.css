@@ -72,8 +72,8 @@ body {
 
 .stamp {
     position: absolute;
-    top: 10;
-    right: 10;
+    top: 20;
+    right: 20;
     width: 80px;
     height: 80px;
     z-index: 1; /* 圖層位於郵戳下方 */
@@ -100,6 +100,11 @@ body {
     color: rgba(0,0,0,0.5);
     text-align: center;
     z-index: 2;
+}
+
+.postmark, .postmark * {
+    color: #c83b3b;
+    border-color: #c83b3b;
 }
 
 .envelope h1 { font-size: 1.4rem; margin-top: 60px; color: var(--text-main); }
