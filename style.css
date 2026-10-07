@@ -210,16 +210,7 @@ body {
     margin-top: 60px;
 }
 .postcard-card {
-    position: relative;
-    width: 100%;
-    
-    /* 👈 更改這裡：確保路徑與你的檔名一致 */
-    background-image: url('images/postcard.jpg'); 
-    
-    background-size: cover;      /* 自動填滿並維持比例 */
-    background-position: center; /* 圖片置中 */
-    background-repeat: no-repeat;
-    
+    background: #fdfdfd;
     display: flex;
     flex-direction: column;
     border: 1px solid #ddd;
