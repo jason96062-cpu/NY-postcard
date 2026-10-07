@@ -70,43 +70,6 @@ body {
     text-align: center;
 }
 
-.stamp {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 85px;
-    height: 85px;
-    filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.12));
-    background: transparent;
-}
-
-.stamp-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-.postmark {
-    position: absolute;
-    top: 15px; right: 55px;
-    width: 80px; height: 80px;
-    border-radius: 50%;
-    border: 2px solid #c83b3b;
-    color: #c83b3b;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 0.65rem; font-family: var(--font-text);
-    transform: rotate(-15deg);
-    color: rgba(0,0,0,0.5);
-    text-align: center;
-    z-index: 2;
-}
-
-.postmark, .postmark * {
-    color: #c83b3b;
-    border-color: #c83b3b;
-}
-
 .envelope h1 { font-size: 1.4rem; margin-top: 60px; color: var(--text-main); }
 .to-line { font-size: 2rem; margin: 20px 0; color: var(--accent-blue); }
 
@@ -231,8 +194,42 @@ body {
 }
 .message-body { font-size: 1.5rem; line-height: 1.5; color: #555; margin-bottom: 30px; }
 .signature { text-align: right; color: var(--accent-blue); font-size: 1.8rem; }
-.final-stamp { top: 20px; right: 20px; }
-.final-postmark { top: 10px; right: 40px; }
+.final-stamp {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 85px;
+    height: 85px;
+    filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.12));
+    background: transparent;
+}
+
+.final-stamp-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.final-postmark {
+    position: absolute;
+    top: 15px; right: 55px;
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    border: 2px solid #c83b3b;
+    color: #c83b3b;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.65rem; font-family: var(--font-text);
+    transform: rotate(-15deg);
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 2;
+}
+
+.final-postmark, .postmark * {
+    color: #c83b3b;
+    border-color: #c83b3b;
+}
 
 /* Stats List */
 #stats-list { list-style: none; margin-top: 20px; }
