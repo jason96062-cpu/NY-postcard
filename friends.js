@@ -63,15 +63,15 @@ const friends = {
     Sofia: {
         name: "Sofia",
         theme: { primary: "#D37B75" },
-        personalNote: "吳悅彣，你想要的手寫明信片等我下次出國再寄給你，只有電子賀卡將就一下吧！",
+        personalNote: "吳悅彣，其實我們的緣分從去紐約前就開始了！飛機坐在我的正後方，過海關也在我後面過，根本是跟屁蟲🐛",
         chapters: [
              {
                 number: "01",
                 title: "Homestay",
                 location: "Taiwan → New York → CSI",
                 image: "images/Sofia-01.jpg", 
-                caption: "第一張溫暖的家庭照🥰(那時候完全沒有想到是跟兩個女生住一起???而且後來才發現你們早就認識，我居然是第三者😑)",
-                text: "現在回想起來，能和你和Zoey能在同一個轟家也是一場奇妙的緣分，如果不是住在一起，我應該不會跟你說到這麼多話吧！"
+                caption: "第一張家庭照🥰<br>那時候完全沒有想到是跟兩個女生住一起???<br>而且後來才發現你們早就認識，我居然是第三者😮",
+                text: "但現在回想起來，能和你和Zoey能在同一個轟家也是一場奇妙的緣分，而且如果不是住在一起，我應該不會跟你說到這麼多話吧！"
             },
             {
                 number: "02",
