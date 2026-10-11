@@ -72,38 +72,26 @@ body {
 
 .stamp {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 85px;
-    height: 85px;
-    background: transparent;
-    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.12));
-    z-index: 1;
-}
-.postmark {
-    position: absolute;
-    top: 10px;
-    right: 55px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid #c83b3b;
-    color: #c83b3b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.65rem;
-    font-family: var(--font-text);
-    transform: rotate(-15deg);
-    text-align: center;
-    z-index: 2 !important; 
+    top: 20px; right: 20px;
+    width: 50px; height: 60px;
+    background: #fcfcfc;
+    border: 2px dashed #ccc;
+    font-size: 0.7rem;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-typewriter); color: var(--accent-red);
 }
 
-/* 強制 postal-mark 內部文字與框線統一為印泥紅 */
-.postmark, 
-.postmark * {
-    color: #c83b3b !important;
-    border-color: #c83b3b !important;
+.postmark {
+    position: absolute;
+    top: 15px; right: 55px;
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,0.4);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.6rem; font-family: var(--font-text);
+    transform: rotate(-15deg);
+    color: rgba(0,0,0,0.5);
+    text-align: center;
 }
 
 .envelope h1 { font-size: 1.4rem; margin-top: 60px; color: var(--text-main); }
@@ -230,6 +218,8 @@ body {
 }
 .message-body { font-size: 1.5rem; line-height: 1.5; color: #555; margin-bottom: 30px; }
 .signature { text-align: right; color: var(--accent-blue); font-size: 1.8rem; }
+.final-stamp { top: 20px; right: 20px; }
+.final-postmark { top: 10px; right: 40px; }
 
 /* Stats List */
 #stats-list { list-style: none; margin-top: 20px; }
