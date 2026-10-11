@@ -59,24 +59,24 @@ const friends = {
         easterEgg: "還記得我們以前說過要一起去哪裡嗎？這張機票先幫你存著！"
     },
 
-    // Amy 的資料
-    amy: {
-        name: "Amy",
-        theme: { primary: "#D37B75" }, // 淡紅色
-        personalNote: "Amy, 走在布魯克林大橋上的時候，我想起我們上次聊到的夢想。這封信是特地寄給妳的！",
+    // Sofia 的資料
+    Sofia: {
+        name: "Sofia",
+        theme: { primary: "#D37B75" },
+        personalNote: "吳悅彣，你想要的手寫明信片等我下次出國再寄給你，只有電子賀卡將就一下吧！",
         chapters: [
              {
                 number: "01",
-                title: "Departure",
-                location: "Taiwan → New York",
-                image: "images/amy-01.jpg", 
-                caption: "終於出發了",
-                text: "這趟旅程開始之前，我其實不知道自己會遇見什麼... (這是一段專屬 Amy 的文字)"
+                title: "Homestay",
+                location: "Taiwan → New York → CSI",
+                image: "images/Sofia-01.jpg", 
+                caption: "第一張溫暖的家庭照🥰(那時候完全沒有想到是跟兩個女生住一起???而且後來才發現你們早就認識，我居然是第三者😑)",
+                text: "現在回想起來，能和你和Zoey能在同一個轟家也是一場奇妙的緣分，如果不是住在一起，我應該不會跟你說到這麼多話吧！"
             },
             {
                 number: "02",
-                title: "A New City",
-                location: "New York City",
+                title: "Broadway Shows!",
+                location: "Wicked",
                 image: "images/amy-02.jpg",
                 caption: "人真的超多",
                 text: "紐約的第一個印象，大概就是——每個人走路都比我快..."
@@ -106,13 +106,13 @@ const friends = {
                 text: "所以這次，我想把紐約的一小部分寄回來給妳。"
             }
         ],
-        endingMessage: "等我回去再跟妳分享更多故事！",
+        endingMessage: "你想要的手寫明信片等我下一次出國再寄給你，我也期待法國的明信哦!",
         signature: "Jason",
         stats: [
             "✈️ 1 journey",
             "☕ 30 cups of coffee",
             "❤️ Miss you guys"
         ],
-        easterEgg: "Amy 專屬彩蛋：下次來吃紐約披薩吧！"
+        easterEgg: "走心的話寫在這："
     }
 };
