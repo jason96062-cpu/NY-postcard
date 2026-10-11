@@ -230,8 +230,8 @@ body {
 .postcard-right { 
     position: relative; 
     background-image: url('images/postcard.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: 120px auto;
+    background-position: left 1px bottom 1px;
     background-repeat: no-repeat;
     padding: 20px;
 }
