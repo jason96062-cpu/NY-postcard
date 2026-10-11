@@ -77,14 +77,12 @@ body {
     width: 80px !important;       /* 外框寬度 */
     height: 80px !important;      /* 外框高度 (正方形) */
     background: transparent !important;
-    overflow: hidden !important;
     z-index: 1;
 }
 
 .stamp-img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: contain !important;
     display: block !important;
 }
 
