@@ -85,7 +85,7 @@ const friends = {
                 number: "20260816",
                 title: "Everyday Manhattan",
                 location: "Central Park",
-                image: "images/Sofia-03.jpg",
+                image: "images/Sofia-03.JPG",
                 caption: "Taiwanese Waves!<br>(結果根本沒有落日飛車)",
                 text: "這趟旅程真的累積了好多好多回憶，在中央公園野餐、吃沒吃過的東西(金果龍果、南瓜派、黃色櫛瓜...還有一堆有的沒的)，去到了我心心念念的Dumbo、看了人生第一場棒球賽、一起在曼哈頓街頭亂晃，每天都有新的事情可以體驗、有趣的故事可以講。"
             },
@@ -101,7 +101,7 @@ const friends = {
                 number: "20260906",
                 title: "抓不住的夏天尾巴",
                 location: "JFK → TPE",
-                image: "images/Sofia-05.jpg",
+                image: "images/Sofia-05.JPG",
                 caption: "大家為了坐一起放棄可以獨佔一整排的機會🥹",
                 text: "旅程總有結束的一天，真正留下來的回憶，往往不是一定要打卡的景點，而是某個下午一起吃的冰淇淋。在紐約每天都過的特別特別充實，還有一堆瓜可以吃<br>希望這張遲來的明信片能留住一小段夏天的尾巴(畢竟你知道我記憶力不是很好)<br>很高興這趟旅程裡有你，期待下一次見面能夠變的更不尷尬ㄛ!"
             }
