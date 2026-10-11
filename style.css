@@ -74,8 +74,8 @@ body {
     position: absolute !important;
     top: 15px;
     right: 15px;
-    width: 90px !important;       
-    height: 90px !important;      
+    width: 100px !important;       
+    height: 100px !important;      
     background: transparent !important;
     z-index: 1;
 }
