@@ -115,14 +115,13 @@ const friends = {
         ],
         easterEgg: "你想要的手寫明信片等我下一次出國再寄給你，我也期待法國的明信哦!"
     },
-
- // Ruby 的資料
+// Ruby 的資料
     Ruby: {
         name: "Ruby",
         theme: { primary: "#D37B75" },
         personalNote: "",
         chapters: [
-             {
+            {
                 number: "01",
                 title: "Homestay",
                 location: "Taiwan → New York → CSI",
@@ -173,13 +172,13 @@ const friends = {
         easterEgg: "你想要的手寫明信片等我下一次出國再寄給你，我也期待法國的明信哦!"
     },
 
- // Zoey 的資料
+    // Zoey 的資料
     Zoey: {
         name: "Zoey",
         theme: { primary: "#D37B75" },
         personalNote: "",
         chapters: [
-             {
+            {
                 number: "01",
                 title: "Homestay",
                 location: "Taiwan → New York → CSI",
@@ -229,4 +228,4 @@ const friends = {
         ],
         easterEgg: "你想要的手寫明信片等我下一次出國再寄給你，我也期待法國的明信哦!"
     }
-},
+};
