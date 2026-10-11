@@ -77,7 +77,7 @@ const friends = {
                 number: "202060811",
                 title: "Broadway Shows!",
                 location: "The Gershwin Theatre",
-                image: "images/Sofia-02.png",
+                image: "images/Sofia-02.jpg",
                 caption: "Wicked真的超級好看！",
                 text: "我來紐約的時候其實沒有研究要去哪裡（只有想到要吃龍蝦)很謝謝你總是有這麼多的點子，把每天的行程排好排滿，如果沒有你揪，我也不會特別去看百老匯！<br>（然後你還把別劇的演員認成是女主角😮)"
             },
