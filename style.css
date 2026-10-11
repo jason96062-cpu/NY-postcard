@@ -231,7 +231,7 @@ body {
     position: relative; 
     background-image: url('images/postcard.jpg');
     background-size: 260px auto;
-    background-position: left 0px top 125px;
+    background-position: left bottom;
     background-repeat: no-repeat;
     padding: 20px;
 }
