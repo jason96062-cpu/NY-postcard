@@ -76,8 +76,7 @@ body {
     right: 20px;
     width: 80px !important;       /* 外框寬度 */
     height: 80px !important;      /* 外框高度 (正方形) */
-    background: transparent;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    background: transparent !important;
     overflow: hidden !important;
     z-index: 1;
 }
@@ -91,7 +90,7 @@ body {
 
 .postmark {
     position: absolute;
-    top: 10px; right: 65px;
+    top: 20px; right: 65px;
     width: 80px; height: 80px;
     border-radius: 50%;
     border: 2px solid rgba(0,0,0,0.4);        
@@ -104,8 +103,7 @@ body {
     font-family: var(--font-heading, monospace);
     transform: rotate(-15deg);
     opacity: 0.85;
-    z-index: 2 !important;        
-    pointer-events: none;         
+    z-index: 2 !important;             
 }
 
 /* 強制郵戳內所有文字都變印章紅 */
@@ -231,7 +229,15 @@ body {
 .postcard-image-placeholder img {
     width: 100%; height: auto; object-fit: cover; border-radius: 2px;
 }
-.postcard-right { position: relative; }
+.postcard-right { 
+    position: relative; 
+    background-image: url('images/postcard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
 .greeting-lines { margin-top: 40px; }
 .friend-name-big {
     font-size: 1.2rem; margin: 15px 0; border-bottom: 1px solid #ccc; padding-bottom: 5px;
