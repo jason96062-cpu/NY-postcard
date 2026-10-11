@@ -96,8 +96,7 @@ const friends = {
                 image: "images/Sofia-04.jpg",
                 caption: "把陳柔伊變成壞女孩",
                 text: "對我來說最難忘的時光還是一起在家的日子<br>每天都超級累的幾個人回家不睡覺還在染頭髮、玩UNO、撲克牌、疊疊樂、還有真心話大走心、甚至直到最後幾天還在做白日夢，真的是很奢侈的回憶呢。"
-"
-            },
+        },
             {
                 number: "05",
                 title: "Until Next Time",
