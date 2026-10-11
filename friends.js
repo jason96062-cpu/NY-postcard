@@ -63,15 +63,15 @@ const friends = {
     Sofia: {
         name: "Sofia",
         theme: { primary: "#D37B75" },
-        personalNote: "吳悅彣，其實我們的緣分從去紐約前就開始了！飛機坐在我的正後方，過海關也在我後面過，根本是跟屁蟲🐛",
+        personalNote: "吳ㄚ悅ㄚ彣，，其實我們的緣分從去紐約前就開始了！飛機坐在我的正後方，過海關也在我後面過，根本是跟屁蟲🐛",
         chapters: [
              {
                 number: "01",
                 title: "Homestay",
                 location: "Taiwan → New York → CSI",
                 image: "images/Sofia-01.jpg", 
-                caption: "第一張家庭照🥰<br>那時候完全沒有想到是跟兩個女生住一起???<br>而且後來才發現你們早就認識，我居然是第三者😮",
-                text: "但現在回想起來，能和你和Zoey能在同一個轟家也是一場奇妙的緣分，而且如果不是住在一起，我應該不會跟你說到這麼多話吧！"
+                caption: "第一張家庭照🥰<br>雖說有很多變熟的契機但好像還是有人快結束還覺得跟我很尷尬哦👀",
+                text: "現在回想起來，能和你和Zoey能在同一個轟家也是一場奇妙的緣分，而且如果不是住在一起，我應該不會跟你說到這麼多話吧！"
             },
             {
                 number: "02",
@@ -106,13 +106,126 @@ const friends = {
                 text: "所以這次，我想把紐約的一小部分寄回來給妳。"
             }
         ],
-        endingMessage: "你想要的手寫明信片等我下一次出國再寄給你，我也期待法國的明信哦!",
-        signature: "Jason",
+        endingMessage: "你想吃沒吃到的貝果和沒有去到的景點，到時候再和大家一起去吧！",
+        signature: "Jason Yang",
         stats: [
-            "✈️ 1 journey",
-            "☕ 30 cups of coffee",
-            "❤️ Miss you guys"
+            "✈️ 手寫明信片等我下次出國再寄給你，我也期待法國的明信片哦!",
+            "🥯 你有想去的地方或想吃的店，回台灣也可以揪大家一起去！",
+            "❤️ 我很期待吃屋馬哦！ 請加油"
         ],
-        easterEgg: "走心的話寫在這："
+        easterEgg: "你想要的手寫明信片等我下一次出國再寄給你，我也期待法國的明信哦!"
+    },
+
+ // Ruby 的資料
+    Ruby: {
+        name: "Ruby",
+        theme: { primary: "#D37B75" },
+        personalNote: "",
+        chapters: [
+             {
+                number: "01",
+                title: "Homestay",
+                location: "Taiwan → New York → CSI",
+                image: "images/Sofia-01.jpg", 
+                caption: "第一張家庭照🥰<br>那時候完全沒有想到是跟兩個女生住一起???<br>而且後來才發現你們早就認識，我居然是第三者😮",
+                text: "現在回想起來，能和你和Zoey能在同一個轟家也是一場奇妙的緣分，而且如果不是住在一起，我應該不會跟你說到這麼多話吧！"
+            },
+            {
+                number: "02",
+                title: "Broadway Shows!",
+                location: "Wicked",
+                image: "images/amy-02.jpg",
+                caption: "人真的超多",
+                text: "紐約的第一個印象，大概就是——每個人走路都比我快..."
+            },
+            {
+                number: "03",
+                title: "The Lab",
+                location: "Staten Island",
+                image: "images/amy-03.jpg",
+                caption: "TLC plate 日常",
+                text: "從熟悉的生物實驗，到第一次真正接觸有機合成..."
+            },
+            {
+                number: "04",
+                title: "My New York",
+                location: "Brooklyn",
+                image: "images/amy-04.jpg",
+                caption: "這裡風景很好",
+                text: "剛開始，我一直在找『紐約最值得看的地方』..."
+            },
+            {
+                number: "05",
+                title: "Until Next Time",
+                location: "Manhattan",
+                image: "images/amy-05.jpg",
+                caption: "捨不得",
+                text: "所以這次，我想把紐約的一小部分寄回來給妳。"
+            }
+        ],
+        endingMessage: "你想吃沒吃到的貝果和沒有去到的景點，到時候再和大家一起去吧！",
+        signature: "Jason Yang",
+        stats: [
+            "✈️ 手寫明信片等我下次出國再寄給你，我也期待法國的明信片哦!",
+            "🥯 你有想去的地方或想吃的店，回台灣也可以揪大家一起去！",
+            "❤️ 我很期待吃屋馬哦！ 請加油"
+        ],
+        easterEgg: "你想要的手寫明信片等我下一次出國再寄給你，我也期待法國的明信哦!"
+},
+
+ // Zoey 的資料
+    Zoey: {
+        name: "Zoey",
+        theme: { primary: "#D37B75" },
+        personalNote: "",
+        chapters: [
+             {
+                number: "01",
+                title: "Homestay",
+                location: "Taiwan → New York → CSI",
+                image: "images/Sofia-01.jpg", 
+                caption: "第一張家庭照🥰<br>那時候完全沒有想到是跟兩個女生住一起???<br>而且後來才發現你們早就認識，我居然是第三者😮",
+                text: "現在回想起來，能和你和Zoey能在同一個轟家也是一場奇妙的緣分，而且如果不是住在一起，我應該不會跟你說到這麼多話吧！"
+            },
+            {
+                number: "02",
+                title: "Broadway Shows!",
+                location: "Wicked",
+                image: "images/amy-02.jpg",
+                caption: "人真的超多",
+                text: "紐約的第一個印象，大概就是——每個人走路都比我快..."
+            },
+            {
+                number: "03",
+                title: "The Lab",
+                location: "Staten Island",
+                image: "images/amy-03.jpg",
+                caption: "TLC plate 日常",
+                text: "從熟悉的生物實驗，到第一次真正接觸有機合成..."
+            },
+            {
+                number: "04",
+                title: "My New York",
+                location: "Brooklyn",
+                image: "images/amy-04.jpg",
+                caption: "這裡風景很好",
+                text: "剛開始，我一直在找『紐約最值得看的地方』..."
+            },
+            {
+                number: "05",
+                title: "Until Next Time",
+                location: "Manhattan",
+                image: "images/amy-05.jpg",
+                caption: "捨不得",
+                text: "所以這次，我想把紐約的一小部分寄回來給妳。"
+            }
+        ],
+        endingMessage: "你想吃沒吃到的貝果和沒有去到的景點，到時候再和大家一起去吧！",
+        signature: "Jason Yang",
+        stats: [
+            "✈️ 手寫明信片等我下次出國再寄給你，我也期待法國的明信片哦!",
+            "🥯 你有想去的地方或想吃的店，回台灣也可以揪大家一起去！",
+            "❤️ 我很期待吃屋馬哦！ 請加油"
+        ],
+        easterEgg: "你想要的手寫明信片等我下一次出國再寄給你，我也期待法國的明信哦!"
     }
-};
