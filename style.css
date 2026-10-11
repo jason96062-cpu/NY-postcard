@@ -74,8 +74,8 @@ body {
     position: absolute !important;
     top: 20px;
     right: 20px;
-    width: 80px !important;       
-    height: 80px !important;      
+    width: 85px !important;       
+    height: 85px !important;      
     background: transparent !important;
     z-index: 1;
 }
@@ -88,7 +88,7 @@ body {
 
 .postmark {
     position: absolute;
-    top: 20px; right: 65px;
+    top: 25px; right: 65px;
     width: 80px; height: 80px;
     border-radius: 50%;
     border: 2px solid rgba(0,0,0,0.4);        
