@@ -123,15 +123,15 @@ const friends = {
     Ruby: {
         name: "Ruby",
         theme: { primary: "#91989F" },
-        personalNote: "品媗!!!你是在台灣的我朋友",
+        personalNote: "品媗！！！你期待的明信片我終於寫完啦!，雖然妳是我在我們這群中認識最晚的人，但回來台灣之後反而有更多的時間能夠一起出門探險!，也算是很有緣份",
         chapters: [
             {
-                number: "20260816",
-                title: "中央公園野餐!",
-                location: "Central Park",
+                number: "20260808",
+                title: "第一次一起出門！",
+                location: "MUJI at NYC",
                 image: "images/Ruby-01.jpg", 
-                caption: "第一張家庭照🥰<br>那時候完全沒有想到是跟兩個女生住一起???<br>而且後來才發現你們早就認識，我居然是第三者😮",
-                text: "現在回想起來，能和你和Zoey能在同一個轟家也是一場奇妙的緣分，而且如果不是住在一起，我應該不會跟你說到這麼多話吧！"
+                caption: "紐約限定刺繡袋，期待哪天能看到它",
+                text: "第一次，在那之前我們也沒有說過話，你好像的人了"
             },
             {
                 number: "20260819",
@@ -143,11 +143,11 @@ const friends = {
             },
             {
                 number: "20260823",
-                title: "Homestay",
+                title: "Best Taco in NYC",
                 location: "Taiwan → New York → CSI",
                 image: "images/Ruby-03.jpg", 
-                caption: "第一張家庭照🥰<br>那時候完全沒有想到是跟兩個女生住一起???<br>而且後來才發現你們早就認識，我居然是第三者😮",
-                text: "現在回想起來，能和你和Zoey能在同一個轟家也是一場奇妙的緣分，而且如果不是住在一起，我應該不會跟你說到這麼多話吧！"
+                caption: "第一次兩個人離開大部隊，跑去吃了NYC最好吃的 Taco!",
+                text: "其實在紐約我很少單獨兩個人一起行動，但跟你相處起來也不會很尷尬，而且我們都是搶先吳悅彣他們一步吃到！每次想到都覺得很好笑"
             },
             {
                 number: "20260829",
