@@ -123,66 +123,66 @@ const friends = {
     Ruby: {
         name: "Ruby",
         theme: { primary: "#91989F" },
-        personalNote: "品媗！！！你期待的明信片我終於寫完啦!，雖然妳是我在我們這群中認識最晚的人，但回來台灣之後反而有更多的時間能夠一起出門探險!，也算是很有緣份",
+        personalNote: "品媗！！！你心心念念的明信片我終於寫完啦!，雖然妳是我在我們這群中認識最晚的人，但也剛好因為我們都是北部人，回來台灣之後反而有更多的時間能夠一起出門探險吃吃吃!這是專們記錄這三個月來我們的點點滴滴的走心之作，希望你看完也會小走心一下!",
         chapters: [
             {
                 number: "20260808",
-                title: "第一次一起出門！",
+                title: "First Hangout!",
                 location: "MUJI at NYC",
                 image: "images/Ruby-01.jpg", 
-                caption: "紐約限定刺繡袋，期待哪天能看到它",
-                text: "第一次，在那之前我們也沒有說過話，你好像的人了"
+                caption: "還沒看到品媗背過紐約限定刺繡袋👀，期待哪天能看到!",
+                text: "第一次出去玩是去無印找你要的紐約限定！(不要聽吳悅彣在那邊造謠，我才沒有說無印怎樣😑)，在這之前我們都還沒有說過話，對妳的第一印象的是個話不多酷酷的人，感覺不太好開口跟你聊天。但那次發現妳也會關注這種可愛小物，就覺得妳應該是很好相處的人，之後也知道很多瓜其實都是妳傳來的(果然不說話的人最深藏不漏了)。不過前幾次行動妳都很少講話，感覺得出來跟是個慢熟的人，我也開始想辦法讓你跟大家都熟一點，也開始會主動cue妳一下(雖然不知道有沒有用啦，但是是我問他們怎麼不加品媗進群組的，吳悅彣不知道在幹嘛🫥)，之後妳也就變成NYC Dump的一員拉!!真是可喜可賀呢🐎"
+            },
+            {
+                number: "20260816-17",
+                title: "Stick together",
+                location: "Manhattan",
+                image: "images/Ruby-02.jpg", 
+                caption: "從曼哈頓回來的路上第一次跟妳聊了很久的天(本來以為當時聊天是很開心的，結果妳反而覺得我很兇嗎🫨)",
+                text: "這周末幾乎都是一起行動！我們一起跑去看怪怪的影展還不知道要不要付錢，到中國城結果跑去看不知道是哪位的祭典，還拿了別人的小卡、去中央公園野餐聽台灣日結果放包包的地方變成垃圾集中場。但也因此留下了許多珍貴的回憶!而且在vessel時妳居然主動說要我幫你拍照!(其實我本來也想問妳要不要拍，但不好意思開口><)有了這次經驗之後我就會問妳要不要當model了！(這裡也讓妳小走心一下好了，那時候我一直覺得品媗是不是有潔癖(應該不是只有我這樣想?)，像是我們買冰的時候就都說不吃，或是能一起吃或喝的東西都說不用，而且還隨身準備抗菌濕巾😶)"
             },
             {
                 number: "20260819",
-                title: "Homestay",
-                location: "Taiwan → New York → CSI",
-                image: "images/Ruby-02.jpg", 
-                caption: "第一張家庭照🥰<br>那時候完全沒有想到是跟兩個女生住一起???<br>而且後來才發現你們早就認識，我居然是第三者😮",
-                text: "現在回想起來，能和你和Zoey能在同一個轟家也是一場奇妙的緣分，而且如果不是住在一起，我應該不會跟你說到這麼多話吧！"
+                title: "Best Taco in NYC",
+                location: "Los tacos no.1",
+                image: "images/Ruby-03.jpg", 
+                caption: "第一次兩個人離開大部隊，跑去吃了NYC最好吃的Taco!",
+                text: "其實在紐約我很少單獨兩個人一起行動，但兩次跟你單獨相處起來不會尷尬(雖然不知道妳是怎麼想的哈哈哈)，也是因為有這樣的機會讓我能跑去吃自己想吃的東西，而且我們都是搶先吳悅彣他們一步吃到！每次想到都覺得很好笑，之後也要跟我一起去吃吃吃哦!妳已經是我的吃貨小夥伴了😎"
             },
             {
                 number: "20260823",
-                title: "Best Taco in NYC",
-                location: "Taiwan → New York → CSI",
-                image: "images/Ruby-03.jpg", 
-                caption: "第一次兩個人離開大部隊，跑去吃了NYC最好吃的 Taco!",
-                text: "其實在紐約我很少單獨兩個人一起行動，但跟你相處起來也不會很尷尬，而且我們都是搶先吳悅彣他們一步吃到！每次想到都覺得很好笑"
+                title: "NYC Dump真的是要Dump掉...",
+                location: "AutoPhoto",
+                image: "images/Ruby-04.jpg",
+                caption: "這張照片裡只有品媗是正常的哈哈哈 這張就屬於妳拉",
+                text: "這一天也是很好笑，"
             },
             {
-                number: "20260829",
-                title: "Broadway Shows!",
-                location: "Wicked",
-                image: "images/amy-02.jpg",
-                caption: "人真的超多",
-                text: "紐約的第一個印象，大概就是——每個人走路都比我快..."
+                number: "20260826",
+                title: "let's Go Yankees!!",
+                location: "Yankees stadium",
+                image: "images/Ruby-05.jpg",
+                caption: "TLC plate 日常",
+                text: "還因此坐到沈博的車"
             },
             {
                 number: "20260916",
-                title: "The Lab",
-                location: "Staten Island",
-                image: "images/amy-03.jpg",
-                caption: "TLC plate 日常",
-                text: "從熟悉的生物實驗，到第一次真正接觸有機合成..."
-            },
-            {
-                number: "20260927",
                 title: "My New York",
                 location: "Brooklyn",
-                image: "images/amy-04.jpg",
+                image: "images/Ruby-06.jpg",
                 caption: "這裡風景很好",
                 text: "剛開始，我一直在找『紐約最值得看的地方』..."
             },
             {
-                number: "20261009",
+                number: "20260927",
                 title: "Until Next Time",
                 location: "Manhattan",
-                image: "images/amy-05.jpg",
+                image: "images/Ruby-07.jpg",
                 caption: "捨不得",
                 text: "所以這次，我想把紐約的一小部分寄回來給妳。"
             }
         ],
-        endingMessage: "想吃沒吃到的貝果和沒有去到的景點，到時候再和大家一起去吧！",
+        endingMessage: "品媗請好好讀書考上藥師賺大錢(才能養我)，我會一直監督妳的哦!",
         signature: "Jason",
         stats: [
             "🧺 什麼時後要去品媗家的公園野餐?",
